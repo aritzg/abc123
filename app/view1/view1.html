@@ -1,0 +1,55 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <button type="button" class="btn btn-danger" ng-click="read()">Start</button>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+             <th><label for=e1>Match</label></th>
+             <th><label for=e2>A</label></th>
+             <th><label for=e3>B</label></th>
+             <th><label for=e4>TimeStamp</label></th>
+             <th><label for=e5>Match PA</label></th>
+             <th><label for=e6>Match PB</label></th>
+
+             <th><label for=e7>Serve</label></th>
+             <th><label for=e8>Points A</label></th>
+             <th><label for=e9>Points B</label></th>
+
+             <th><label for=e10>S1GA</label></th>
+             <th><label for=e10>S1GB</label></th>
+             <th><label for=e10>S2GA</label></th>
+             <th><label for=e10>S2GB</label></th>
+             <th><label for=e11>S1 PA</label></th>
+             <th><label for=e12>S1 PB</label></th>
+             <th><label for=e13>S1 r</label></th>
+             <th><label for=e14>S1 p</label></th>
+           </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="match in matches">
+              <td>{{match.matchId}}</td>
+              <td>{{match.a}}</td>
+              <td>{{match.b}}</td>
+              <td></td>
+              <td>{{match.pa}}</td>
+              <td>{{match.pb}}</td>
+              <td>{{match.serve}}</td>
+              <td>{{match.pointsa}}</td>
+              <td>{{match.pointsb}}</td>
+              <td>{{match.s1ga}}</td>
+              <td>{{match.s1gb}}</td>
+              <td>{{match.s2ga}}</td>
+              <td>{{match.s2gb}}</td>
+            </tr>
+          </tbody>
+
+        </table>
+
+
+    </div>
+    <div class=" col-md-12">
+      <iframe id="one" width="100%" height="500px" src="https://euskadi.kirolbet.es/esp/Live" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
