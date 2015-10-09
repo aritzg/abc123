@@ -1,4 +1,7 @@
 /* app css stylesheet */
+body{
+  font-size: 10px;
+}
 
 .menu {
   list-style: none;
@@ -27,4 +30,16 @@
 .menu > li:nth-child(1):before {
   content: "";
   padding: 0;
+}
+
+.result-grid td ul.names{
+  width:100%;
+}
+.result-grid td li{
+  display:block;
+  text-align: right;
+}
+
+.result-grid thead>tr>th {
+  padding: 1px;
 }
